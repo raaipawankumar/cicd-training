@@ -1,11 +1,11 @@
 
 
-trigger:
-  batch: true
-  branches:
-    include:    # Configure branches to uaes as a trigger. "*" means include all branches
-      - main
-    exclude:    # Configure branches to exclude from trigger list.
-      - "test"
+trigger: none
 stages:
-  - 
+- stage: 'RestorePackagesStage'
+  displayName: 'Restore Package'
+  jobs:
+    - job: 'RestorePackageJob'
+      displayName: 'Restore Package Job'
+      steps:
+       - script: dotnet restore CICDTrainingApps/*.sln
