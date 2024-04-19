@@ -5,6 +5,9 @@ variables:
 - name: 'Solution'
   value: CICDTrainingApps/*.sln
   readonly: true
+- name: 'BuildConfiguration'
+  value: 'Release'
+  readonly: true
 stages:
 - stage: 'RestorePackagesStage'
   displayName: 'Restore Package'
@@ -23,10 +26,11 @@ stages:
     - job: 'BuildJob'
       displayName: 'Build Job'
       steps:
-       - task: DotNetCoreCLI@2
-         inputs:
-           command: 'build'
-           projects: '**/*.sln'
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'build'
+            projects: '**/*.csproj'
+            arguments: '--configuration $(BuildConfiguration)'
 - stage: 'PublishStage'
   displayName: 'Publish'
   jobs:
@@ -37,6 +41,6 @@ stages:
           inputs:
             command: 'publish'
             publishWebProjects: true
-            arguments: '--configuration Release' 
+            arguments: '--configuration $(BuildConfiguration) --output $(Buid.ArtifactStagingDirectory)' 
 
 
