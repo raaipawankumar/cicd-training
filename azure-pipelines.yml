@@ -1,4 +1,6 @@
 trigger: none
+pool:
+  name: "Default"
 variables:
 - name: 'Solution'
   value: CICDTrainingApps/*.sln
