@@ -12,4 +12,4 @@ stages:
     - job: 'RestorePackageJob'
       displayName: 'Restore Package Job'
       steps:
-       - script: dotnet restore CICDTrainingApps/**/*.csproj
+       - script: dotnet restore **/*.csproj
