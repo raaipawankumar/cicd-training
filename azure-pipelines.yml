@@ -27,4 +27,16 @@ stages:
          inputs:
            command: 'build'
            projects: '**/*.sln'
+- stage: 'PublishStage'
+  displayName: 'Publish'
+  jobs:
+    - job: 'PublishCodeJob'
+      displayName: 'Publish'
+      steps:
+        - task: DotNetCoreCLI@2
+          inputs:
+            command: 'publish'
+            publishWebProjects: true
+            arguments: '--configuration Release' 
+
 
