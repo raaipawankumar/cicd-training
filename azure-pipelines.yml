@@ -17,3 +17,14 @@ stages:
            command: 'restore'
            restoreSolution: '**/*.sln'
            feedsToUse: 'select'
+- stage: 'BuildStage'
+  displayName: 'Build'
+  jobs:
+    - job: 'BuildJob'
+      displayName: 'Build Job'
+      steps:
+       - task: DotNetCoreCLI@2
+         inputs:
+           command: 'build'
+           projects: '**/*.sln'
+
