@@ -12,4 +12,8 @@ stages:
     - job: 'RestorePackageJob'
       displayName: 'Restore Package Job'
       steps:
-       - script: dotnet restore **/*.csproj
+       - task: NuGetCommand@2
+         inputs:
+           command: 'restore'
+           restoreSolution: '**/*.sln'
+           feedsToUse: 'select'
