@@ -31,8 +31,10 @@ stages:
   - job: BuildJob
     displayName: 'Build job'
     pool:
-     #name: 'Name of Agent pool' -> Default name of an Agent Pool is Azure pipelines. To use a self hosted agent, use name of your self hosted agent pool 
-      vmImage: ${{ parameters.vmImage }} #vmImage property specifies the Docker container image to be used as the execution environment for the steps.
+      # name: 'Name of Agent pool'
+      # Default name of an Agent Pool is Azure pipelines. To use a self hosted agent, use name of your self hosted agent pool.
+      vmImage: ${{ parameters.vmImage }}
+      #vmImage property specifies the Docker container image to be used as the execution environment for the steps.
     steps:
     - script: |
         # Example build steps
