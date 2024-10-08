@@ -83,7 +83,7 @@ extends:
 
 ## Agent Pool
 
-Agent pool is a collection of Agent machines that run pipeline jobs. By default, Azure DevOps comes with 2 Agent pools.
+An Agent pool is a collection of Agent machines that run pipeline jobs. By default, Azure DevOps comes with 2 Agent pools.
 
 1. Azure Pipelines: Azure Pipelines is the default Microsoft-hosted pool.
 2. Default: We can use this to attach our self-hosted agent.
