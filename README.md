@@ -83,23 +83,21 @@ extends:
 
 ## Agent Pool
 
-An Agent pool is a collection of Agent machines that run pipeline jobs. By default, Azure DevOps comes with 2 Agent pools.
+An Agent pool is a collection of agent machines that run pipeline jobs. By default, Azure DevOps comes with 2 Agent pools.
 
 1. Azure Pipelines: Azure Pipelines is the default Microsoft-hosted pool.
 2. Default: We can use this to attach our self-hosted agent.
 
 ## Pools and Agents
 
-By default, Azure DevOps
-
-Azure DevOps provides two types of agents:
+By default, Azure DevOps provides two types of agents:
 
 1. Microsoft Hosted Agents: They are managed and maintained by Microsoft. By default, a pipeline uses a Microsoft-hosted pool.
 2. Self-Hosted Agents: Self-hosted agents are set up and maintained by us on our infrastructure, This could be an on-premise server or virtual machine. We should use it when we want more control over infrastructure or we have to follow strict security guidelines and compliances.
 
 ## Trigger
 
-Trigger is used to define conditions under which the pipeline should be triggered. There are three types of triggers: Repository, Resource and Schedule.
+A trigger is used to define conditions under which the pipeline should be executed. There are three types of triggers: Repository, Resource and Schedule.
 
 ```yaml
 # Disable triggers
