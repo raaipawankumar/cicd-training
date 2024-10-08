@@ -1,10 +1,10 @@
 # Continuous Integration and Deployment
+## Continuous Integeration
+Continuous integration is an application development practice where developers frequently integrate their code changes into a shared code repository that triggers an automated build process, which includes compiling the code, running automated tests and checking for potential errors. The main purpose of continuous integration is to detect and address integration issues as quickly as possible.
 
-Continuous integration is an application development practice where developers frequently integrate their code changes into a shared repository that triggers an automated build process, which includes compiling the code, running automated tests and checking for potential errors. The main purpose of continuous integration is to detect and address integration issues as quickly as possible.
+## Azure DevOps Pipeline
 
-## Azure Pipeline
-
-Azure Pipeline is a cloud-based CI/CD service. It supports the YAML pipeline that allows us to define or build and release processes as code and provides a more versionable and maintainable approach to a visual designer-based pipeline.
+Azure DevOps Pipeline is a cloud-based CI/CD service. It supports the YAML pipeline that allows us to define or build and release processes as code and provides a more versionable and maintainable approach to a visual designer-based pipeline.
 
 ## Azure Pipeline Template
 
