@@ -97,7 +97,7 @@ By default, Azure DevOps provides two types of agents:
 
 ## Trigger
 
-A trigger is used to define conditions under which the pipeline should be executed. There are three types of triggers: Repository, Resource and Schedule.
+A trigger is used to define conditions under which the pipeline should be executed. There are three types of triggers: Repository based, Resource based and Schedule based.
 
 ```yaml
 # Disable triggers
