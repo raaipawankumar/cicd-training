@@ -1,0 +1,11 @@
+trigger: none
+
+pool:
+  name: Default
+
+steps:
+
+- script: |
+    echo $(Build.Id)
+ 
+  displayName: 'Run a multi-line script'
