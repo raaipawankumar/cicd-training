@@ -17,7 +17,9 @@ steps:
     echo "Release Details"
     echo "Release Id: $(Release.ReleaseId)"
     echo "Release Number: $(Release.ReleaseNumber)"
+    echo "Release Name: $(Release.ReleaseName)"
     echo "Release Environment: $(Release.EnvironmentName)"
+    echo "Release Definition Name: $(Release.DefinitionName)"
     echo "Release Requested By: $(Release.Deployment.RequestedFor)"
     echo "Agent Details"
     echo "Agent Name: $(Agent.Name)"
@@ -30,5 +32,12 @@ steps:
     echo "Stage Display Name: $(System.StageDisplayName)"
     echo "Job Name: $(System.JobName)"
     echo "Job Display Name: $(System.JobDisplayName)"
+    echo "Is in Debug mode: $(System.Debug)"
+    echo "Pull Request Source Branch : $(System.PullRequest.SourceBranch)"
+    echo "Pull Request Target Branch : $(System.PullRequest.TargetBranch)"
+    echo "Access Token : $(System.AccessToken)"
+    echo "Artifacts Directory : $(System.ArtifactsDirectory)"
+    echo "CollectionId : $(System.CollectionId)"
+
     
   displayName: 'Print Predefined Variables'

@@ -301,3 +301,10 @@ By default, Steps within a job are executed sequentially but we can also configu
 - **System.JobDisplayName**: The display name of the current job.
 - **System.JobName**: The name of the current job.
 - **System.StageDisplayName**: The display name of the current stage.
+- **System.Debug**: Indicates if debug mode is enabled.
+- **System.PullRequest.SourceBranch**: The branch associated with the pull request.
+- **System.PullRequest.TargetBranch**: The branch the pull request is targeting.
+- **System.AccessToken**: A token for accessing Azure DevOps REST API.
+- **System.ArtifactsDirectory**: The directory for storing build artifacts.
+- **System.CollectionId**: The ID of the project collection.
+
