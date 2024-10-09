@@ -6,7 +6,7 @@ pool:
 steps:
 
 - script: |
-    echo 'Build Id: $(Build.Id)'
-    echo 'Build Number: $(Build.Number)'
-    echo 'Build Definition Name: $(Build.Definition.Name)'
+    echo "Building on branch $(Build.SourceBranch)"
+    echo "Current build number: $(Build.BuildNumber)"
+    echo "Definition name: $(Build.DefinitionName)"
   displayName: 'Print Predefined Variables'
