@@ -276,30 +276,28 @@ By default, Steps within a job are executed sequentially but we can also configu
 
 ```
 ## Predefined Variables
-## Build Variables
+### Build Variables
 - **Build.BuildId**: The unique identifier for the current build.
 - **Build.BuildNumber**: The build number assigned to the current build.
 - **Build.DefinitionName**: The name of the build pipeline (formerly known as the build definition).
 - **Build.Repository.Name**: The name of the source code repository.
 - **Build.SourceBranch**: The branch or source control ref that triggered the build.
 - **Build.SourceVersion** : The commit or changeset version that triggered the build.
-**Build.Repository.Provider**: The source control provider (e.g., Git, TFVC).
-Release Variables:
-Release.ReleaseId: The unique identifier for the current release.
-Release.ReleaseName: The name of the release.
-Release.Artifacts.{alias}.BuildNumber: The build number of a specific artifact (replace {alias} with the artifact alias).
-Release.EnvironmentName: The name of the current release environment.
-Release.Deployment.RequestedFor: The user who initiated the release deployment.
-Agent Variables:
-Agent.Name: The name of the agent running the job.
-Agent.Version: The version of the agent.
-Agent.OS: The operating system of the agent (e.g., Windows, Linux, macOS).
-Environment Variables:
-System.TeamProject: The name of the Azure DevOps project.
-System.DefaultWorkingDirectory: The default working directory for the agent.
-System.StageName: The name of the current stage in a multi-stage pipeline.
-Pipeline Variables:
-System.JobDisplayName: The display name of the current job.
-System.JobName: The name of the current job.
-System.StageDisplayName: The display name of the current stage.
-System.StageName: The name of the current stage.
+- **Build.Repository.Provider**: The source control provider (e.g., Git, TFVC).
+### Release Variables
+- **Release.ReleaseId**: The unique identifier for the current release.
+- **Release.ReleaseName**: The name of the release.
+- **Release.Artifacts.{alias}.BuildNumber**: The build number of a specific artifact (replace {alias} with the artifact alias).
+- **Release.EnvironmentName**: The name of the current release environment.
+- **Release.Deployment.RequestedFor**: The user who initiated the release deployment.
+### Agent Variables
+- **Agent.Name**: The name of the agent running the job.
+- **Agent.Version**: The version of the agent.
+- **Agent.OS** : The operating system of the agent (e.g., Windows, Linux, macOS).
+### System Variables
+- **System.TeamProject**: The name of the Azure DevOps project.
+- **System.DefaultWorkingDirectory**: The default working directory for the agent.
+- **System.StageName**: The name of the current stage in a multi-stage pipeline.
+- **System.JobDisplayName**: The display name of the current job.
+- **System.JobName**: The name of the current job.
+- **System.StageDisplayName**: The display name of the current stage.
