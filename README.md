@@ -276,14 +276,14 @@ By default, Steps within a job are executed sequentially but we can also configu
 
 ```
 ## Predefined Variables
-Build Variables:
-Build.BuildId: The unique identifier for the current build.
-Build.BuildNumber: The build number assigned to the current build.
-Build.DefinitionName: The name of the build pipeline (formerly known as the build definition).
-Build.Repository.Name: The name of the source code repository.
-Build.SourceBranch: The branch or source control ref that triggered the build.
-Build.SourceVersion: The commit or changeset version that triggered the build.
-Build.Repository.Provider: The source control provider (e.g., Git, TFVC).
+## Build Variables
+- **Build.BuildId**: The unique identifier for the current build.
+- **Build.BuildNumber**: The build number assigned to the current build.
+- **Build.DefinitionName**: The name of the build pipeline (formerly known as the build definition).
+- **Build.Repository.Name**: The name of the source code repository.
+- **Build.SourceBranch**: The branch or source control ref that triggered the build.
+- **Build.SourceVersion** : The commit or changeset version that triggered the build.
+**Build.Repository.Provider**: The source control provider (e.g., Git, TFVC).
 Release Variables:
 Release.ReleaseId: The unique identifier for the current release.
 Release.ReleaseName: The name of the release.
