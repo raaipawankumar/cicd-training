@@ -7,6 +7,6 @@ steps:
 
 - script: |
     echo 'Build Id: $(Build.Id)'
-    echo 'Build Name: $(Build.Name)'
- 
-  displayName: 'Run a multi-line script'
+    echo 'Build Number: $(Build.Number)'
+    echo 'Build Definition Name: $(Build.Definition.Name)'
+  displayName: 'Print Predefined Variables'
