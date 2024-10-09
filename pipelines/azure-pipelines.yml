@@ -8,6 +8,7 @@ variables:
 - name: 'BuildConfiguration'
   value: 'Release'
   readonly: true
+  
 stages:
 - stage: 'RestorePackagesStage'
   displayName: 'Restore Package'
